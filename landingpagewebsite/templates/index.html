@@ -5,7 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-{{ a }}
-{{ text }}
+{% for obj in object_list %}
+<h2>{{obj.id}}</h2>
+<h2>{{obj.order_dt}}</h2>
+<h2>{{obj.order_name}}</h2>
+<h2>{{obj.order_phone}}</h2>
+{% endfor %}
 </body>
 </html>
