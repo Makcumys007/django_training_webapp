@@ -1,0 +1,8 @@
+# Запустить виртуальное окружение
+cd D:\Djangoweb\venv\Scripts
+activate
+
+# Запустить сервер
+D:\Djangoweb\landingpagewebsite
+
+python.exe .\manage.py runserver
