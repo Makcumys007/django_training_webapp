@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
 
 
 
-{% if object_list %}
+<h2>Data from index</h2>
 
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>DATE</th>
-        <th>NAME</th>
-        <th>PHONE</th>
-    </tr>
-{% for obj in object_list %}
-    <tr>
-        <th>{{obj.id}}</th>
-        <th>{{obj.order_dt}}</th>
-        <th>{{obj.order_name}}</th>
-        <th>{{obj.order_phone}}</th>
-    </tr>
-{% endfor %}
-</table>
-
-{% else %}
-<h2>No data!</h2>
-{% endif %}
-</body>
-</html>
+{% include 'index_old.html' %}
+{% endblock %}
